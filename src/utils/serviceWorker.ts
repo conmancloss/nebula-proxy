@@ -45,7 +45,7 @@ function* createProxyScripts() {
 const checkProxyScripts = (): Promise<void> => {
     return new Promise((resolve) => {
         const checkScript = setInterval(() => {
-            if (typeof __uv$config !== "undefined" && typeof $scramjetLoadController !== "undefined") {
+//             if (typeof __uv$config !== "undefined" && typeof $scramjetLoadController !== "undefined") {
                 clearInterval(checkScript);
                 resolve();
             }
