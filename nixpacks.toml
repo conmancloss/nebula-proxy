@@ -1,5 +1,5 @@
 [phases.install]
-cmds = ["npm i -g pnpm --prefix /usr/local", "pnpm install"]
+cmds = ["corepack enable", "corepack prepare pnpm@latest --activate", "pnpm install"]
 
 [phases.build]
 cmds = ["pnpm run build"]
