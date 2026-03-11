@@ -1,8 +1,5 @@
-[phases.setup]
-nixPkgs = ["nodejs_22"]
-
 [phases.install]
-cmds = ["npm i -g pnpm && pnpm install"]
+cmds = ["npm i -g pnpm --prefix /usr/local", "pnpm install"]
 
 [phases.build]
 cmds = ["pnpm run build"]
